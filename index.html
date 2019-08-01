@@ -1,110 +1,41 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link href="https://fonts.googleapis.com/css?family=Dosis:200,300,800" rel="stylesheet">
-  <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	
 </head>
 <body>
-	<h1 id="title">
-      Survey Form
-	</h1>
-  <div class="all">
-	  <form id="survey-form">
-	  <p id="description">
-		  Let us know how we can improve freeCodeCamp
-	  </p>
-		  
-	  <div class="col span-1-of-2 label">
-		  <label for="name" id="name-label"><sup class="star">*</sup> Name:</label>
-      </div>
-      <div class="col span-1-of-2">
-         <input type="text" name="name" id="name" placeholder=" Enter your name" required>
-      </div>
-		  
-		<div class="col span-1-of-2 label">
-		  <label for="email" id="email-label"><sup class="star">*</sup> Email:</label>
-      </div>
-      <div class="col span-1-of-2">
-         	<input type="email" name="email" id="email" placeholder=" Enter your Email" required>
-      </div>
-		  
-		<div class="col span-1-of-2 label">
-		  <label for="age" id="number-label"><sup class="star">*</sup> Age:</label>
-      </div>
-      <div class="col span-1-of-2">
-      <input type="number" name="age" id="number" min="1" max="130" placeholder=" Enter your age" required>
-      </div>
-		  
-		<div class="col span-1-of-2 label">
-			<label for="age">Which option best describes your current role?</label>
-      </div>
-		<div class="col span-1-of-2">
-		 <select name="role" id="dropdown">
-			 <option value="please" disabled>Select an option</option> <!-- inaktív válaszható sor -->
-			 <option value="student">Student</option>
-			 <option value="fulltime">Full time job</option>
-			 <option value="full-learner">Full time learner</option>
-			 <option value="not">Prefer not to say</option>
-			 <option value="other">Other</option>
-		</select>
+	<div class="profile-card">
+		<header>
+			<div class="profile-image">
+				<img src="https://endre88.github.io/pictures/me.jpg" alt="Szabó Endre">
+			</div>
+			<div class="name-headline">
+				<h1>Szabó Endre</h1>
+				<h2>Front End Developer</h2>
+				<span>from</span>
+				<p><i class="fa fa-map-marker"></i>Budapest, HU</p>
+			</div>
+		</header>
+		<div class="content">
+			<p class="about">
+				I love to make Web pages about my favourite things. 
+			</p>
+			<section class="links">
+				<h2>Contact me via:</h2>
+				<ul>
+					<li><a href="https://facebook.com/#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
+					<li><a href="https://linkedin.com/#"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+					<li><a href="https://github.com/#"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+				</ul>
+			</section>
 		</div>
-		  
-		<div class="col span-1-of-2 label long">
-			<label for="radio"><sup class="star">*</sup> How likely is that you would recommend freeCodeCamp to a friend?
-			</label>
-      </div> 
-		<div class="col span-1-of-2" id="radio">
-			<label for="definitely"><input type="radio" name="radio" value="definitely"> Definitely</label><br>
-			<label for="maybe"><input type="radio" name="radio" value="maybe"> May be</label><br>
-			<label for="notsure"><input type="radio" name="radio" value="notsure"> Not sure</label>
-      </div>
-		  
-		  <div class="col span-1-of-2 label">
-			<label for="age">Which option best describes your current role?</label>
-      </div>
-		<div class="col span-1-of-2">
-		 <select name="love" id="dropdown">
-			 <option value="disabled" disabled>Select an option</option><!-- inaktív válaszható sor -->
-			 <option value="challenges" >Challenges</option> 
-			 <option value="projects">Projects</option>
-			 <option value="community">Community</option>
-			 <option value="opensource">Open Source</option>
-		</select>
-		</div>
-		  
-		<div class="col span-1-of-2 label long" >
-			<label for="checkbox">Things that should be improved in the future
-(Check all that apply):
-			</label>
-      </div> 
-		<div class="col span-1-of-2" id="checkbox">
-			<label for="checkbox"><input type="checkbox" name="checkbox" value="frontend"> Front-end Projects</label><br>
-			<label for="checkbox"><input type="checkbox" name="checkbox" value="backend"> Back-end Projects</label><br>
-			<label for="checkbox"><input type="checkbox" name="checkbox" value="visual"> Data Visualization</label><br>
-			<label for="checkbox"><input type="checkbox" name="checkbox" value="challenges"> Challenges</label><br>
-			<label for="checkbox"><input type="checkbox" name="checkbox" value="osc"> Open Source Community</label><br>
-			<label for="checkbox"><input type="checkbox" name="checkbox" value="Gitter"> Gitter help rooms</label><br>
-			<label for="checkbox"><input type="checkbox" name="checkbox" value="videos"> Videos</label><br>
-			<label for="checkbox"><input type="checkbox" name="checkbox" value="meetups"> City Meetups</label><br>
-			<label for="checkbox"><input type="checkbox" name="checkbox" value="Wiki"> Wiki</label><br>
-			<label for="checkbox"><input type="checkbox" name="checkbox" value="Forum"> Forum</label><br>
-			<label for="checkbox"><input type="checkbox" name="checkbox" value="courses"> Additional Courses</label><br>
-      </div> 
-		
-		  
-		<div class="col span-1-of-2 label long" >
-			<label for="textarea">Any Comments or Suggestions?</label>
-      </div>
-		<div class="col span-1-of-2">
-      <textarea name="textarea" rows="3" cols="43" placeholder="Enter your comment here..." required></textarea>
-      </div>  
-		
-		  
-			<button type="submit" id="submit" value="submit">Submit</button>
-   
-	  </form>
-  </div>
-  
+	</div>
 </body>
+</html>
